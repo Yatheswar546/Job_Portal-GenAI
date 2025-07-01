@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Portal - Admin</title>
+
+    <!-- Bootstrap CSS Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+
+</head>
+
+<body>
+
+    <!------------- NAVBAR SECTION ---------------->
+    <nav class="navbar navbar-expand-lg bg-primary">
+        <div class="container-fluid">
+
+            <!-- Brand on the Left -->
+            <a class="navbar-brand text-light" href="#">LinkedIn</a>
+
+            <!-- Toggler button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon text-light"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0 me-3">
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" href="../index.html#jobs">Jobs</a>
+                    </li>
+                    <li class="nav-item">
+
+                        <a class="nav-link active text-light" href="#">Logout</a>
+                    </li>
+                </ul>
+                <!-- <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn btn-outline-success text-white" type="submit">Search</button>
+                </form> -->
+            </div>
+        </div>
+    </nav>
+
+    <!------------- BANNER SECTION ---------------->
+    <section class="py-5 text-cente text-white banner-section">
+        <div class="container">
+            <h1 class="display-5">Find Your Dream Job</h1>
+            <p class="lead">Explore thousands of opportunities from top companies</p>
+            <a href="../index.html#jobs" class="btn btn-light btn-lg">Search Jobs</a>
+        </div>
+    </section>
+
+    <!------------- JOB MANAGEMENT SECTION ---------------->
+    <section class="py-5">
+        <div class="container">
+            
+            <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-2">
+                <h2 class="mx-auto">Admin: Manage All Jobs</h2>
+                <a href="./admin.html" class="btn btn-outline-secondary ms-auto">
+                    <i class="fas fa-arrow-left me-1"></i> Back to Admin
+                </a>
+            </div>
+
+
+            <div class="table-responsive">
+                <table class="table table-bordered align-middle">
+                    <thead class="table-primary">
+                        <tr>
+                            <th>ID</th>
+                            <th>Job Title</th>
+                            <th>Employer</th>
+                            <th>Location</th>
+                            <th>Posted At</th>
+                            <th>Status</th>
+                            <th class="text-center">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Full Stack Developer</td>
+                            <td>Meta</td>
+                            <td>Hyderabad</td>
+                            <td>2025-06-25</td>
+                            <td><span class="badge bg-success">Approved</span></td>
+                            <td class="text-center">
+                                <button class="btn btn-sm btn-outline-primary me-2"><i class="fas fa-eye"></i>
+                                    View</button>
+                                <button class="btn btn-sm btn-outline-danger"><i class="fas fa-trash-alt"></i>
+                                    Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Marketing Intern</td>
+                            <td>Amazon</td>
+                            <td>Remote</td>
+                            <td>2025-06-22</td>
+                            <td><span class="badge bg-warning text-dark">Pending</span></td>
+                            <td class="text-center">
+                                <button class="btn btn-sm btn-outline-success me-2"><i class="fas fa-check"></i>
+                                    Approve</button>
+                                <button class="btn btn-sm btn-outline-danger"><i class="fas fa-trash-alt"></i>
+                                    Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!------------ FOOTER SECTION ------------------->
+    <footer class="footer bg-primary text-light py-5">
+        <div class="container">
+            <div class="row">
+
+                <!-- Company -->
+                <div class="col-12 col-sm-6 col-md-3 mb-4">
+                    <h4 class="footer-title">Company</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Our services</a></li>
+                        <li><a href="#">Privacy policy</a></li>
+                        <li><a href="#">Affiliate program</a></li>
+                    </ul>
+                </div>
+
+                <!-- Get help -->
+                <div class="col-12 col-sm-6 col-md-3 mb-4">
+                    <h4 class="footer-title">Get help</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Order status</a></li>
+                        <li><a href="#">Payment options</a></li>
+                    </ul>
+                </div>
+
+                <!-- Online shop -->
+                <div class="col-12 col-sm-6 col-md-3 mb-4">
+                    <h4 class="footer-title">Online shop</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Watch</a></li>
+                        <li><a href="#">Bag</a></li>
+                        <li><a href="#">Shoes</a></li>
+                        <li><a href="#">Dress</a></li>
+                    </ul>
+                </div>
+
+                <!-- Follow us -->
+                <div class="col-12 col-sm-6 col-md-3 mb-4">
+                    <h4 class="footer-title">Follow us</h4>
+                    <div class="d-flex flex-wrap gap-2">
+                        <a href="#"><i class="fab fa-facebook-f social-icon"></i></a>
+                        <a href="#"><i class="fab fa-twitter social-icon"></i></a>
+                        <a href="#"><i class="fab fa-instagram social-icon"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in social-icon"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <!------------ COPYRIGHT SECTION ------------------->
+    <footer class="bg-light text-black text-center py-3">
+        <div class="container">
+            <small>&copy; 2025 JobHub. All rights reserved.</small>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
